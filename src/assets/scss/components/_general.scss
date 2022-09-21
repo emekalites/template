@@ -1,0 +1,15 @@
+.loading-page {
+	height: 360px;
+}
+
+.no-match {
+	img {
+		width: 13rem;
+		max-height: 100%;
+	}
+
+	a {
+		font-size: 14px;
+		color: $custom-pink;
+	}
+}

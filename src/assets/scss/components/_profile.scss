@@ -1,0 +1,186 @@
+@mixin button-link {
+	font-size: 11px;
+	padding: 8px 25px;
+	margin-top: 11px;
+}
+
+.profile-head {
+	.avatar {
+		width: 128px;
+
+		img {
+			overflow: hidden;
+			border-radius: 50%;
+			width: 128px;
+			max-height: 100%;
+		}
+
+		div {
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			width: 22px;
+			height: 22px;
+			bottom: 16px;
+			background-color: $custom-pink-tertiary;
+			color: $custom-pink;
+			font-size: 11px;
+		}
+	}
+
+	h2 {
+		color: $custom-primary-purple;
+		font-size: 28px;
+		margin-bottom: 4px;
+	}
+
+	p {
+		color: $custom-gray;
+		font-size: 12px;
+		margin: 0;
+
+		&.name {
+			color: $custom-gray-1;
+			font-size: 10px;
+		}
+	}
+}
+
+.setup {
+	padding: 120px 0;
+
+	p {
+		margin: 0 auto;
+		width: 140px;
+		font-size: 14px;
+		color: $custom-gray;
+	}
+
+	a.btn {
+		@include button-link;
+	}
+}
+
+.setup-form {
+	h2 {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	form {
+		display: block;
+		width: 75%;
+		margin: 32px auto 0;
+
+		@media only screen and (min-width: 481px) and (max-width: 768px) {
+			width: 80%;
+		}
+
+		@media (max-width: 480px) {
+			width: 90%;
+		}
+	}
+
+	.btn {
+		font-size: 11px;
+		font-weight: 500;
+		padding: 8px 0;
+		width: 100%;
+	}
+}
+
+.empty-list {
+	padding: 45px 0;
+
+	img {
+		width: 220px;
+		max-height: 100%;
+	}
+
+	.mini-block {
+		width: 210px;
+
+		p {
+			margin: 0;
+
+			&.fw-medium {
+				font-size: 10px;
+			}
+
+			&.fw-semibold {
+				font-size: 13px;
+			}
+		}
+	}
+
+	.btn {
+		@include button-link;
+	}
+}
+
+.song-list {
+	padding: 45px 80px 60px;
+
+	h2 {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.grid {
+		--bs-columns: 3;
+		--bs-gap: 1.45rem;
+
+		.card {
+			box-shadow: $box-shadow;
+			border: 0 none;
+
+			.card-body {
+				.star-rating {
+					span {
+						cursor: pointer;
+						font-size: 9px;
+						color: $custom-gray-2;
+						margin-left: 1.5px;
+
+						&:first-child {
+							margin-left: 0;
+						}
+
+						&.checked {
+							color: $custom-yellow;
+						}
+					}
+				}
+
+				.reviews {
+					p {
+						font-size: 9px;
+						color: $custom-gray;
+					}
+				}
+
+				a {
+					font-size: 12px;
+					color: $custom-gray;
+					cursor: pointer;
+				}
+
+				h5 {
+					color: $custom-gray;
+					font-weight: 500;
+					font-size: 12px;
+					padding: 0;
+					margin-bottom: 2px;
+					margin-top: 6px;
+				}
+
+				.card-text {
+					color: $custom-gray;
+					font-size: 10px;
+				}
+			}
+		}
+	}
+}

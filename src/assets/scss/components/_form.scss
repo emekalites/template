@@ -1,0 +1,32 @@
+label {
+	color: $custom-gray;
+	font-weight: 500;
+	font-size: 12px;
+	margin-bottom: 4px;
+}
+
+.form-control {
+	background-color: #f0efef;
+	border-color: $custom-gray-2;
+	color: $black;
+	font-size: 0.85rem;
+
+	&.is-invalid {
+		border-color: $red;
+	}
+
+	&:focus {
+		outline: none !important;
+		box-shadow: none !important;
+	}
+
+	&::placeholder {
+		color: $custom-gray-2;
+		font-size: 10px;
+		font-weight: 500;
+	}
+}
+
+.invalid-feedback {
+	font-size: 0.75em;
+}

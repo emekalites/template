@@ -1,0 +1,23 @@
+$font-family-sans-serif: 'Poppins', sans-serif !default;
+$custom-pink: #da216f;
+$custom-black: #000000;
+$custom-primary-purple: #4705ad;
+$custom-light-purple: #ede6f7;
+$custom-yellow: #F7B82D;
+$custom-pink-secondary: #E5649A;
+$custom-pink-tertiary: #FBE9F1;
+$custom-gray: #656262;
+$custom-gray-1: #939191;
+$custom-gray-2: #D1D0D0;
+
+$font-weight-medium:          500 !default;
+
+$enable-cssgrid: true;
+
+// spinner-variables
+$spinner-width: 2rem !default;
+$spinner-height: $spinner-width !default;
+$spinner-vertical-align: -0.125em !default;
+$spinner-border-width: 0.25em !default;
+$spinner-animation-speed: 0.75s !default;
+$reduced-spinner-animation-speed: 1.5s !default;
