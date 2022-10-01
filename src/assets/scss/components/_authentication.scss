@@ -93,24 +93,18 @@
 
 		form {
 			.input-group {
-				.input-group-text {
-					i {
-						color: #c8b4e6;
-						font-size: 12px;
-					}
-
-					&.is-invalid {
-						border-color: $red !important;
-					}
-				}
-
 				.form-control {
 					border-left: 0 none;
 					padding-left: 0;
-					
-					&.is-invalid {
+
+					&:not([type='password']) {
 						border-top-right-radius: 0.375rem !important;
 						border-bottom-right-radius: 0.375rem !important;
+					}
+
+					&[type='password'] {
+						border-right: 0 none;
+						border-radius: 0 !important;
 					}
 				}
 			}

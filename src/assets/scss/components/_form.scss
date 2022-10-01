@@ -5,19 +5,27 @@ label {
 	margin-bottom: 4px;
 }
 
+.input-group-text {
+	background-color: $form-bg-color;
+	color: $form-icon-color;
+	font-size: 12px;
+
+	&.is-invalid {
+		border-color: $red !important;
+	}
+}
+
 .form-control {
-	background-color: #f0efef;
+	background-color: $form-bg-color;
 	border-color: $custom-gray-2;
 	color: $black;
 	font-size: 0.85rem;
 
-	&.is-invalid {
-		border-color: $red;
-	}
-
 	&:focus {
 		outline: none !important;
 		box-shadow: none !important;
+		background-color: $form-bg-color;
+		border-color: $custom-gray-2;
 	}
 
 	&::placeholder {

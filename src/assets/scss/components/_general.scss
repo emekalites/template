@@ -13,3 +13,14 @@
 		color: $custom-pink;
 	}
 }
+
+.pointer {
+	cursor: pointer;
+}
+
+.alert {
+	font-size: 0.75rem;
+	border-radius: 0 !important;
+	border-bottom: 2px solid;
+	border-top: 2px solid;
+}

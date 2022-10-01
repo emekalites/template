@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "serve": "python3 -m http.server 3000 --directory ./src/",
+    "serve": "python3 -m http.server 3004 --directory ./src/",
     "livereload": "livereload  src/ -w 1000 -d",
     "scss:build": "sass ./src/assets/scss/styles.scss ./src/assets/css/styles.css",
     "scss:watch": "sass  --watch ./src/assets/scss/styles.scss ./src/assets/css/styles.css"
