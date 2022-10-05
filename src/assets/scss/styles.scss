@@ -145,9 +145,9 @@ $utilities: map-merge(
 @import '../../../node_modules/bootstrap/scss/alert';
 // @import "../../../node_modules/bootstrap/scss/progress";
 // @import "../../../node_modules/bootstrap/scss/list-group";
-// @import "../../../node_modules/bootstrap/scss/close";
+@import "../../../node_modules/bootstrap/scss/close";
 // @import "../../../node_modules/bootstrap/scss/toasts";
-// @import "../../../node_modules/bootstrap/scss/modal";
+@import "../../../node_modules/bootstrap/scss/modal";
 // @import "../../../node_modules/bootstrap/scss/tooltip";
 // @import "../../../node_modules/bootstrap/scss/popover";
 // @import "../../../node_modules/bootstrap/scss/carousel";
@@ -162,5 +162,6 @@ $utilities: map-merge(
 @import 'components/hero';
 @import 'components/how';
 @import 'components/authentication';
+@import 'components/modal';
 @import 'components/profile';
 @import 'components/footer';

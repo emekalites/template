@@ -67,50 +67,77 @@
 			<div class="row align-items-center vh-100">
 				<div class="pt-3 pb-4 pb-lg-5 pt-lg-5 ms-auto col-md-7">
 					<div class="authy-form">
-						<a href="onboarding.html" class="logo">
+						<a href="index.html" class="logo">
 							<img src="assets/images/logo.png" alt="" class="">
 						</a>
 						<h2 class="mt-4 mb-4 display-6 fw-semibold">
-							Sign in
+							Create an Account
 						</h2>
+						<div class="d-flex my-4 justify-content-center buttons">
+							<button
+								class="btn btn-custom-primary-purple rounded-top-end-0 rounded-bottom-start-0 rounded-bottom-end-0">Artist</button>
+							<button
+								class="btn btn-custom-light-purple rounded-top-start-0 rounded-bottom-start-0 rounded-bottom-end-0">Reviewer</button>
+						</div>
 						<form>
-							<div class="form-group mb-3">
-								<input type="email" id="email" class="form-control " placeholder="Email">
+							<div class="input-group mb-3">
+								<span class="input-group-text">
+									<i class="fa fa-user"></i>
+								</span>
+								<input type="text" id="firstname" class="form-control" placeholder="First name">
 							</div>
 							<div class="input-group mb-3">
-								<span class="input-group-text is-invalid">
+								<span class="input-group-text">
+									<i class="fa fa-user"></i>
+								</span>
+								<input type="text" id="lastname" class="form-control" placeholder="Last name">
+							</div>
+							<div class="input-group mb-3">
+								<span class="input-group-text">
 									<i class="fa fa-envelope"></i>
 								</span>
-								<input type="email" id="email" class="form-control is-invalid" placeholder="Email">
-								<div class="invalid-feedback">
-									Please provide a valid email.
-								</div>
+								<input type="email" id="email" class="form-control" placeholder="Email">
 							</div>
 							<div class="input-group mb-3">
-								<span class="input-group-text is-invalid">
+								<span class="input-group-text">
 									<i class="fa fa-lock"></i>
 								</span>
-								<input type="password" id="password" class="form-control is-invalid" placeholder="Password">
-								<span class="input-group-text is-invalid">
+								<input type="password" id="password" class="form-control" placeholder="Password">
+								<span class="input-group-text">
 									<i class="fa fa-eye"></i>
 								</span>
 							</div>
-							<button class="btn btn-custom-pink" type="submit">
+							<button type="button" class="btn btn-custom-pink" data-bs-toggle="modal"
+								data-bs-target="#exampleModal">
 								Enter
 							</button>
 						</form>
 						<p class="mt-4 mb-0 small fw-medium">
-							<a href="forgot-password.html" class="ms-2">Forgot
-								Password?</a>
-						</p>
-						<p class="mt-2 mb-0 small fw-medium">
-							Don't have an account yet? <a href="signup.html" class="ms-2">Sign up now</a>
+							Already got an account? <a href="signin.html" class="ms-2">Login</a>
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div class="email-sent text-center pb-4">
+						<figure class="mx-auto py-4">
+							<img src="assets/images/email-sent.png" alt="" />
+						</figure>
+						<p class="sent-title">Email sent Successfully</p>
+						<p class="sent-description">A link has been sent to your email to verify your accaount</p>
+						<button class="btn btn-custom-pink">Continue</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="assets/js/bootstrap.min.js"></script>
 </body>

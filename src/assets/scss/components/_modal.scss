@@ -1,0 +1,31 @@
+.modal-backdrop {
+	display: none;
+}
+
+.modal-open {
+	overflow: hidden;
+	padding-right: 0px;
+
+	.modal-backdrop {
+		display: block;
+	}
+
+	.show {
+		display: block !important;
+	}
+}
+
+.btn-close {
+	&:focus {
+		box-shadow: none !important;
+	}
+}
+
+.modal-body {
+	.btn-close {
+		position: absolute;
+		right: var(--bs-modal-padding);;
+		top: var(--bs-modal-padding);;
+		z-index: 2;
+	}
+}

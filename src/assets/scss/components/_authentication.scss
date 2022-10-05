@@ -97,12 +97,12 @@
 					border-left: 0 none;
 					padding-left: 0;
 
-					&:not([type='password']) {
+					&:not([name='password']) {
 						border-top-right-radius: 0.375rem !important;
 						border-bottom-right-radius: 0.375rem !important;
 					}
 
-					&[type='password'] {
+					&[name='password'] {
 						border-right: 0 none;
 						border-radius: 0 !important;
 					}
@@ -128,5 +128,34 @@
 				}
 			}
 		}
+	}
+}
+
+.email-sent {
+	figure {
+		width: 220px;
+
+		img {
+			width: 220px;
+			max-height: 100%;
+		}
+	}
+
+	.sent-title {
+		color: $custom-primary-purple;
+		font-weight: 600;
+		font-size: 16px;
+		margin: 0;
+	}
+
+	.sent-description {
+		color: $custom-gray;
+		font-size: 10px;
+	}
+
+	.btn {
+		font-size: 11px;
+		font-weight: 500;
+		padding: 8px 24px;
 	}
 }
