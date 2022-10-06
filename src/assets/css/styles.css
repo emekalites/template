@@ -20889,6 +20889,10 @@ div[class$=menu] div[class$=option] {
   border-right: 0 none;
   border-radius: 0 !important;
 }
+.authy .authy-form form .input-group .form-control[name=password_confirmation] {
+  border-right: 0 none;
+  border-radius: 0 !important;
+}
 .authy .authy-form form .btn {
   font-size: 11px;
   font-weight: 500;
