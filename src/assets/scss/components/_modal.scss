@@ -24,8 +24,18 @@
 .modal-body {
 	.btn-close {
 		position: absolute;
-		right: var(--bs-modal-padding);;
-		top: var(--bs-modal-padding);;
+		right: var(--bs-modal-padding);
+		top: var(--bs-modal-padding);
 		z-index: 2;
+	}
+}
+
+.form-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.btn {
+		width: 120px !important;
 	}
 }

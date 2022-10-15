@@ -106,15 +106,25 @@
 			<div class="container">
 				<div class="row">
 					<div class="setup-form col-md-8 bg-white m-auto py-5">
-						<h2 class="fw-semibold">Artist Form</h2>
-						<form action="empty-songs.html">
+						<h2 class="fw-semibold">Upload Song</h2>
+						<div class="dot-pagination mx-auto d-flex align-items-center">
+							<div class="dot active"></div>
+							<hr/>
+							<div class="dot"></div>
+						</div>
+						<form action="songs.html">
 							<div class="mb-3">
-								<label for="">Artist/Band Name</label>
+								<label for="">Song title</label>
 								<input type="text" id="firstname" class="form-control" placeholder="First name">
 							</div>
-							<button class="btn btn-custom-pink" type="submit">
-								Save
-							</button>
+							<div class="form-footer">
+								<button class="btn btn-inverse-pink" type="button">
+									Previous
+								</button>
+								<button class="btn btn-custom-pink" type="submit">
+									Next
+								</button>
+							</div>
 						</form>
 					</div>
 				</div>

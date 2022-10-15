@@ -4,6 +4,13 @@
 	margin-top: 11px;
 }
 
+.socials {
+	background-color: $custom-pink-tertiary;
+	color: $custom-pink;
+	font-size: 13px;
+	font-weight: 600;
+}
+
 .profile-head {
 	.avatar {
 		width: 128px;
@@ -63,34 +70,6 @@
 	}
 }
 
-.setup-form {
-	h2 {
-		font-size: 16px;
-		text-align: center;
-	}
-
-	form {
-		display: block;
-		width: 75%;
-		margin: 32px auto 0;
-
-		@media only screen and (min-width: 481px) and (max-width: 768px) {
-			width: 80%;
-		}
-
-		@media (max-width: 480px) {
-			width: 90%;
-		}
-	}
-
-	.btn {
-		font-size: 11px;
-		font-weight: 500;
-		padding: 8px 0;
-		width: 100%;
-	}
-}
-
 .empty-list {
 	padding: 45px 0;
 
@@ -121,20 +100,49 @@
 }
 
 .song-list {
-	padding: 45px 80px 60px;
+	padding: 45px 120px 60px;
+
+	@media (max-width: 1024px) {
+		padding: 45px 32px 60px;
+	}
 
 	h2 {
 		font-size: 16px;
 		text-align: center;
 	}
 
-	.grid {
-		--bs-columns: 3;
-		--bs-gap: 1.45rem;
+	.song-block {
+		&.grid {
+			--bs-columns: 3;
+			--bs-gap: 1.45rem;
+		}
+
+		@media (max-width: 768px) {
+			--bs-columns: 2;
+		}
+
+		@media (max-width: 640px) {
+			--bs-columns: 1;
+		}
 
 		.card {
 			box-shadow: $box-shadow;
 			border: 0 none;
+
+			&.card-new {
+				box-shadow: none !important;
+				border: 1px dashed $custom-pink;
+				border-radius: 16px;
+				align-items: center;
+				justify-content: center;
+				height: 240px;
+				margin-top: 30px;
+
+				.btn {
+					@include button-link;
+					margin-top: 0 !important;
+				}
+			}
 
 			.card-body {
 				.star-rating {
@@ -162,25 +170,68 @@
 				}
 
 				a {
-					font-size: 12px;
-					color: $custom-gray;
-					cursor: pointer;
+					&.share {
+						font-size: 12px;
+						color: $custom-gray;
+						cursor: pointer;
+					}
 				}
 
 				h5 {
-					color: $custom-gray;
-					font-weight: 500;
-					font-size: 12px;
 					padding: 0;
-					margin-bottom: 2px;
+					font-weight: 500;
+					margin-bottom: 0;
 					margin-top: 6px;
+
+					a {
+						color: $custom-gray;
+						font-size: 12px;
+						text-decoration: none;
+					}
 				}
 
 				.card-text {
-					color: $custom-gray;
-					font-size: 10px;
+					a {
+						color: $custom-gray;
+						font-size: 10px;
+						text-decoration: none;
+					}
+				}
+
+				.players {
+					&.grid {
+						--bs-columns: 7;
+						--bs-gap: 0.45rem;
+					}
+
+					a {
+						display: flex;
+						height: 12px;
+					}
+
+					img {
+						max-height: 100%;
+					}
 				}
 			}
 		}
+	}
+}
+
+.embed-block {
+	max-width: 640px;
+
+	.embed-item {
+		background-color: $form-bg-color;
+		padding: 80px 80px 20px;
+
+		iframe {
+			width: 100%;
+		}
+	}
+
+	.rating-block {
+		background-color: $form-bg-color;
+		padding-bottom: 80px;
 	}
 }

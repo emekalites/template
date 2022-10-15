@@ -1,3 +1,77 @@
+.setup-form {
+	padding-left: 182px;
+	padding-right: 182px;
+	width: 760px;
+
+	@media only screen and (min-width: 481px) and (max-width: 768px) {
+		width: 640px;
+	}
+
+	@media (max-width: 480px) {
+		width: 90%;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	h2 {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.dot-pagination {
+		width: 240px;
+		margin-top: 50px;
+
+		@media (max-width: 760px) {
+			width: 90%;
+		}
+
+		.dot {
+			border-radius: 50%;
+			border: 1px solid $custom-pink;
+			height: 12px;
+			width: 12px;
+			flex: none;
+
+			&.active {
+				background-color: $custom-pink;
+			}
+		}
+
+		hr {
+			color: $custom-pink;
+			width: 100%;
+			opacity: 1;
+			margin: 0 !important;
+		}
+	}
+
+	form {
+		display: block;
+		// width: 75%;
+		margin: 32px auto 0;
+
+		// @media only screen and (min-width: 481px) and (max-width: 768px) {
+		// 	width: 80%;
+		// }
+
+		// @media (max-width: 480px) {
+		// 	width: 90%;
+		// }
+
+		textarea {
+			height: 150px;
+		}
+	}
+
+	.btn {
+		font-size: 11px;
+		font-weight: 500;
+		padding: 8px 0;
+		width: 100%;
+	}
+}
+
 label {
 	color: $custom-gray;
 	font-weight: 500;
@@ -86,5 +160,96 @@ div[class$='menu'] {
 
 	div[class$='option'] {
 		font-size: 12px;
+	}
+}
+
+.btn-inverse-pink {
+	background-color: $white;
+	border: 1px solid $custom-pink;
+	color: $custom-pink;
+
+	&:hover {
+		background-color: $white !important;
+		border: 1px solid $custom-pink !important;
+		color: $custom-pink !important;
+	}
+}
+
+.dropzone {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	border: 1px dashed $custom-pink;
+	border-radius: 0.375rem;
+	background-color: $custom-pink-tertiary;
+	color: $custom-pink;
+	outline: none;
+	transition: border 0.24s ease-in-out;
+	cursor: pointer;
+
+	p {
+		margin: 10px 0 0;
+	}
+
+	p,
+	i {
+		font-size: 0.74rem;
+	}
+
+	& ~ .invalid-feedback {
+		display: block;
+	}
+}
+
+.thumbs-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+
+	.close {
+		position: absolute;
+		right: 0;
+		top: 0;
+		background-color: $custom-pink;
+		height: 24px;
+		width: 24px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		button.btn-close {
+			color: $white !important;
+			font-size: 10px;
+			padding: 4px;
+
+			&:hover {
+				color: $white !important;
+			}
+		}
+	}
+
+	.thumb {
+		display: inline-flex;
+		border: 1px solid #eaeaea;
+		margin-left: 8px;
+		width: 100px;
+		height: 100px;
+		padding: 4px;
+	}
+
+	.thumb-inner {
+		display: flex;
+		min-width: 0;
+		overflow: hidden;
+	}
+
+	.img {
+		display: block;
+		width: auto;
+		height: 100%;
 	}
 }
