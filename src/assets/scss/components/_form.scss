@@ -1,3 +1,9 @@
+@mixin button-link {
+	font-size: 11px;
+	padding: 8px 25px;
+	margin-top: 11px;
+}
+
 .setup-form {
 	padding-left: 182px;
 	padding-right: 182px;
@@ -69,6 +75,18 @@
 		font-weight: 500;
 		padding: 8px 0;
 		width: 100%;
+	}
+}
+
+.modal-form {
+	padding: 20px 32px;
+
+	textarea {
+		height: 200px;
+	}
+
+	.btn {
+		@include button-link;
 	}
 }
 

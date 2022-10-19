@@ -1,6 +1,7 @@
 @import 'fontawesome/scss/fontawesome.scss';
 @import 'fontawesome/scss/solid.scss';
 @import 'fontawesome/scss/brands.scss';
+@import 'fontawesome/scss/regular.scss';
 
 @import '../../../node_modules/bootstrap/scss/functions';
 @import 'bootstrap/variables';
@@ -11,6 +12,7 @@ $custom-colors: (
 	'custom-black': #000000,
 	'custom-primary-purple': #4705ad,
 	'custom-light-purple': #ede6f7,
+	'custom-gray': #656262,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -144,7 +146,7 @@ $utilities: map-merge(
 @import "../../../node_modules/bootstrap/scss/badge";
 @import '../../../node_modules/bootstrap/scss/alert';
 // @import "../../../node_modules/bootstrap/scss/progress";
-// @import "../../../node_modules/bootstrap/scss/list-group";
+@import "../../../node_modules/bootstrap/scss/list-group";
 @import "../../../node_modules/bootstrap/scss/close";
 // @import "../../../node_modules/bootstrap/scss/toasts";
 @import "../../../node_modules/bootstrap/scss/modal";
